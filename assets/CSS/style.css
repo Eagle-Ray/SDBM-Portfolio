@@ -3,41 +3,65 @@
 * {box-sizing:border-box}
 
 body {
-  background-color:seashell;
+  background-color: wheat;
+  margin: 0;
 }
 
-header nav {
-  /* padding-top: 15px; */
-  /* margin-right: 20px; */
- 
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #36454F;
+  padding: 10px;
+  align-items: center;
 }
 
-/* Stacy Martin Header */
+/* Stacy Martin  */
 header h1 {
-  /* float: center; */
-  font-family: 'Brush Script MT', 'Lucida Sans Unicode';
   font-size: 50pt;
+  font-family: 'Brush Script MT', 'Lucida Sans Unicode';
+  color: #b29700;
+  padding: 10px;
+  line-height: 1pt;
 }
 
 /* Links to About Me, Experience, Contact, Resume */
-header ul li {
-  display: inline-block;
-  /* margin-top: 25px; */
-  /* margin-left: 25px; */
-  font-size: 20px;
+header nav a {
+  font-size: 24px;
   font-family: fantasy, Haettenschweiler, 'Arial Narrow Bold', sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 10px;
+  color: #b29700;
+  margin-right: 5px;
+}
+
+nav a:hover {color: lightcoral}
+
+.rosesImg {
+  height: 200px;
+  width: 100%;
+  background-image: url("../Images/14707024_10210303741125812_1603463890066332308_o.jpg");
+  background-size: cover;
+  background-position:initial;
+  /* opacity: 80%; */
 }
 
 .butterflyfish {
   height: 250px;
   width: 100%;
-  /* margin-bottom: 25px; */
+  margin-bottom: 25px;
   background-image: url("../Images/27788231_595143794158166_2456201630593097014_o.jpg");
   background-size: cover;
   background-position: center;
 }
 
+.mug_shot {
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  /* border: black; */
+  /* border-style: groove; */
+}
 
+main {
+  color: #36454F
+}
 
 
 footer h3 {
@@ -45,4 +69,9 @@ footer h3 {
   clear: both;
   font-family: 'Brush Script MT', 'Lucida Sans Unicode';
   text-align: center;
+}
+
+.resumePg {
+  text-align: center;
+  color: aquamarine;
 }
