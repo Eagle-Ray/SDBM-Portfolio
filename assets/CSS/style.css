@@ -1,86 +1,110 @@
 
-
 * {box-sizing:border-box}
 
 body {
-  background-image: url("../Images/32-325791_free-high-resolution-graphic-backgrounds-high-resolution-abstract.jpg");
-  background-size: cover;
-  /* background-color: wheat; */
-  margin: 0;
+  /* background-image: url("../Images/32-325791_free-high-resolution-graphic-backgrounds-high-resolution-abstract.jpg");
+  background-size: cover; */
+  background-color: #c5cbe3;
+  margin:inherit;
   /* opacity: 60%; */
   /* background-blend-mode: luminosity; */
 }
 
-.mug_shot {
+header{
+  float:left;
+  display: flex;
+  /* justify-content: space-between; */
+  /* background-color: #36454F; */
+  padding: 15px;
+  /* align-items:baseline; */
+  margin: 0;
+}
+
+.mug_shot1 {
   clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
   /* border: black; */
   /* border-style: groove; */
+  float: left;
 }
 
-header{
-  display: flex;
-  justify-content: space-between;
-  /* background-color: #36454F; */
+/* Links to About Me, Experience, Contact, Resume */
+header nav a {
+  font-size: 34px;
+  font-family: reklame-script, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   padding: 10px;
-  align-items:baseline;
+  color: #c5cbe3;
+  /* padding: 0px,0px,600px,0px; */
+  /* margin-right: 5px; */
+  /* align-items:unset; */
+  float: right;
+  /* align-items: center; */
+}
+
+nav a:hover {color: lightcoral}
+
+/* Sunset image */
+.BackgroundImg {
+  background-image: url("../Images/32-325791_free-high-resolution-graphic-backgrounds-high-resolution-abstract.jpg");
+  /* background-repeat: no-repeat; */
+  background-attachment: fixed;  
+  background-size:contain;
+  /* margin: 0; */
+  min-height: 80vh;
+  text-align: center;
+  display: block;
+  padding-top: 0px;
 }
 
 /* Stacy Martin  */
-header h1 {
+section h1 {
   font-size: 50pt;
   font-family: reklame-script, sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #c5cbe3;
-  padding: 10px;
+  padding-top: 300px;
   line-height: 1pt;
+  align-items: center;
+  float: center;
 }
 
-/* Links to About Me, Experience, Contact, Resume */
-header nav a {
-  font-size: 24px;
+/* my brief description */
+section h2 {
+  font-size: 30pt;
   font-family: reklame-script, sans-serif;
   font-style: normal;
   font-weight: 400;
-  padding: 10px;
   color: #c5cbe3;
-  margin-right: 5px;
-  align-items: center;
+  padding: 10px;
+  float:center;
+  line-height: 20pt;
+  align-items: right;
 }
 
-nav a:hover {color: lightcoral}
+h3 {
+  float: left;
+  padding: 20px;
+  font-size: 20pt;
+  color: #e27d60;
+}
 
-/* .rosesImg {
-  height: 200px;
-  width: 100%;
-  background-image: url("../Images/14707024_10210303741125812_1603463890066332308_o.jpg");
-  background-size: cover;
-  background-position:initial;
-  /* opacity: 80%; */
-/* } */
-
-/* .butterflyfish {
-  height: 250px;
-  width: 100%;
-  margin-bottom: 25px;
-  background-image: url("../Images/27788231_595143794158166_2456201630593097014_o.jpg");
-  background-size: cover;
-  background-position: center;
-} */ 
-
-
-main {
-  color: #efe2df;
+.Details {
+  color: #e8a87c;
   font-family: korolev, sans-serif;
   font-style: normal;
   font-weight: 500;
 }
 
-h2 {
-  font-family: proxima-nova, sans-serif;
-  font-weight: 700;
-  font-style: normal;
+h4 {
+  float: right;
+  padding: 20px;
+  font-size: 20pt;
+  color: #e27d60;
 }
+
+
 
 .contact {
   display: flex;
@@ -89,7 +113,7 @@ h2 {
   padding: 30px;
   align-items: center;
   /* color: #b29700 */
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   bottom: 100px;
   width: 100%;
@@ -98,33 +122,34 @@ h2 {
 }
 
 footer {
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
 }
 
-footer h3 {
+footer h5 {
   /* padding: 0px; */
   /* clear: both; */
   font-family: reklame-script, sans-serif;
   font-style: normal;
   font-weight: 200;
+  font-size: 16pt;
   letter-spacing: 2pt;
   text-align: center;
-  color: #c5cbe3
+  color: #e27d60
 }
 
-footer h4 {
+footer h6 {
   padding: 0px,10px,10px,10px;
   clear: both;
   font-family: reklame-script, sans-serif;
   font-style: normal;
   font-weight: 200;
   text-align: center;
-  font-size: 10pt;
+  font-size: 12pt;
   letter-spacing: 2pt;
-  color: #c5cbe3
+  color: #e27d60
 }
 
