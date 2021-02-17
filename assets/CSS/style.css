@@ -26,7 +26,10 @@ header{
   /* border-style: groove; */
   float: left;
 }
-
+nav {
+  display: flex;
+  margin-left: 50px;
+}
 /* Links to About Me, Experience, Contact, Resume */
 header nav a {
   font-size: 34px;
@@ -35,14 +38,23 @@ header nav a {
   font-weight: 400;
   padding: 10px;
   color: #c5cbe3;
+  
   /* padding: 0px,0px,600px,0px; */
   /* margin-right: 5px; */
   /* align-items:unset; */
-  float: right;
+  /* float: right; */
   /* align-items: center; */
 }
 
-nav a:hover {color: lightcoral}
+.float-right {
+  float:right;
+  text-align: right;
+  justify-content: right;
+  margin-left: 250px;
+  /* align-items: flex-start; */
+}
+
+nav a:hover {color: #e27d60}
 
 /* Sunset image */
 .BackgroundImg {
@@ -65,9 +77,11 @@ section h1 {
   font-weight: 400;
   color: #c5cbe3;
   padding-top: 300px;
+  padding-bottom: 8px;
   line-height: 1pt;
   align-items: center;
   float: center;
+  margin: 0px;
 }
 
 /* my brief description */
@@ -83,28 +97,35 @@ section h2 {
   align-items: right;
 }
 
-h3 {
-  float: left;
-  padding: 20px;
-  font-size: 20pt;
-  color: #e27d60;
-}
 
+
+/* "About Me and Experience headers */
 .Details {
-  color: #e8a87c;
+  color: #e27d60;
   font-family: korolev, sans-serif;
   font-style: normal;
   font-weight: 500;
+  font-size: 18pt;
+  display:contents;
+  margin: 10px;
+  /* height: 200px; */
 }
 
-h4 {
+/* About me sidebar */
+h3 {
+  float: left;
+  padding: 30px;
+  font-size: 28pt;
+  color: #e27d60;
+  display:flex;
+}
+
+/* h4 {
   float: right;
   padding: 20px;
   font-size: 20pt;
   color: #e27d60;
-}
-
-
+} */
 
 .contact {
   display: flex;
@@ -121,16 +142,83 @@ h4 {
   border: white; */
 }
 
+
+.container {
+  display: grid;
+  grid-template-columns: 50px,50px,50px,50px,50px;
+  grid-template-rows: 50px, 50px;
+  grid-template-areas: 
+    "main main header1 header2"
+    "main main sidebar1 sidebar2";
+  column-gap: 5px;
+  row-gap: 5px;
+  padding-left: 20px;
+  justify-items: stretch;
+  position: relative;
+  text-align: center;
+  color: white;
+  /* border-radius: 5%; */
+  /* justify-self: stretch; */
+}
+
+img {
+  border-radius: 5%;
+  border: 3px solid #dddf10;
+}
+
+.item-a {
+  grid-area: main;
+  justify-self: stretch;
+  justify-items: stretch;
+  /* border-radius: 5%; */
+  /* border: 3px solid #dddf10; */
+}
+
+.item-b {
+  grid-area: header1;
+  justify-self: stretch;
+  /* border: 3px solid #dddf10; */
+}
+
+.item-c {
+  grid-area: header2;
+  justify-self: stretch;
+  /* border: 3px solid #dddf10; */
+}
+
+.item-d {
+  grid-area: sidebar1;
+  justify-self: stretch;
+  /* border: 3px solid #dddf10; */
+}
+
+.item-e {
+  grid-area: sidebar2;
+  justify-self: stretch;
+  /* border: 3px solid #dddf10; */
+}
+
+
+
+h7 {
+  font-family: korolev, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #dddf10;
+  float: left;
+}
+
 footer {
   /* position: fixed; */
   left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
+  /* margin: 0; */
 }
 
 footer h5 {
-  /* padding: 0px; */
+  padding: 0px;
   /* clear: both; */
   font-family: reklame-script, sans-serif;
   font-style: normal;
@@ -138,11 +226,12 @@ footer h5 {
   font-size: 16pt;
   letter-spacing: 2pt;
   text-align: center;
-  color: #e27d60
+  color: #5e2c04;
+  margin: 0
 }
 
 footer h6 {
-  padding: 0px,10px,10px,10px;
+  /* padding: 0px,10px,10px,10px; */
   clear: both;
   font-family: reklame-script, sans-serif;
   font-style: normal;
@@ -150,6 +239,11 @@ footer h6 {
   text-align: center;
   font-size: 12pt;
   letter-spacing: 2pt;
-  color: #e27d60
+  color: #5e2c04;
+  margin: 0;
+  margin-top: 10px;
 }
 
+a:-webkit-any-link {
+  text-decoration: none;
+}
