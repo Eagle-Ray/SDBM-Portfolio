@@ -42,11 +42,10 @@ header nav a {
 nav a:hover {color: #e27d60}
 
 /* Sunset image */
-.BackgroundImg {
+#BackgroundImg {
   background-image: url("../Images/32-325791_free-high-resolution-graphic-backgrounds-high-resolution-abstract.jpg");
-  /* background-repeat: no-repeat; */
   background-attachment: fixed;  
-  background-size:contain;
+  /* background-size:cover; */
   min-height: 80vh;
   text-align: center;
   display: block;
@@ -102,11 +101,6 @@ h3 {
   flex-wrap: wrap;
 }
 
-img {
-  border-radius: 5%;
-  border: 3px solid #dddf10;
-}
-
 .container {
   display: grid;
   grid-template-columns: 50px,50px,50px,50px,50px;
@@ -146,13 +140,6 @@ img {
   justify-self: stretch;
 }
 
-h7 {
-  font-family: korolev, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  color: #dddf10;
-  float: left;
-}
 
 .contact {
   display: flex;
@@ -162,6 +149,11 @@ h7 {
   left: 0;
   bottom: 100px;
   width: 100%;
+}
+
+img {
+  border-radius: 5%;
+  border: 3px solid #dddf10;
 }
 
 footer {
@@ -198,28 +190,32 @@ a:-webkit-any-link {
 }
 
 /* mobile devices */
-@media (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .BackgroundImg {
-      /* width: 480px; */
-      /* padding-top: 50px; */
+      width: 100%;
+      float:none;
   }
   .h3 {
-
+    width: 100%;
+    float:none;
   }
   .container {
-
+    width: 100%;
+    float:none;
   }
   .contact {
-
+    width: 100%;
+    float:none;
   }
   .footer {
-
+    width: 100%;
+    float:none;
   }
 }
 
 
 /* tablets */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .BackgroundImg {
 
   }
